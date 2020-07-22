@@ -1,11 +1,14 @@
 #include <bits/stdc++.h>
+
 using namespace std;
+
 class Compare {
 public:
     bool operator() (pair<int, int> a, pair<int, int> b) {
         return (double)a.second / a.first < (double)b.second / b.first;
     }
 };
+
 int main() {
     int N, T;
     cin >> N >> T;
